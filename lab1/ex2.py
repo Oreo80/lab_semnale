@@ -10,6 +10,8 @@ t = np.linspace(0,0.03,1600)
 plt.figure()
 plt.title("Sinus 400Hz")
 plt.plot(t,sinus(400,t))
+plt.stem(t,sinus(400,t))
+plt.xlim(0, 0.003)
 plt.savefig("ex2a.pdf")
 plt.show()
 
